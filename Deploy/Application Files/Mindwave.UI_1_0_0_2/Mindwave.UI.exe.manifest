@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Mindwave.UI.exe" version="1.0.0.2" publicKeyToken="3b71998be9ce7796" language="neutral" processorArchitecture="amd64" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Mindwave.UI" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
+    <commandLine file="Mindwave.UI.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Mindwave.Controller.dll" size="9216">
+      <assemblyIdentity name="Mindwave.Controller" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>cDEXMFzO7JFCosI0iz7ox/02JMHIr+8FKynPxyvQGaI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Mindwave.UI.exe" size="34232">
+      <assemblyIdentity name="Mindwave.UI" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>mKWzqkS1Y1h0YMa5g5JKSyhR5KWu18yAQX+oqLjcXgY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Mindwave.UI.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>rl5/qDc7Jz+tB+BIbOv9iMGPlRe6YJwrjmU09dnlPcs=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=MALEK-PC\Malek" issuerKeyHash="57e6d8f589b230ba6e353bd61d8454f9ba1abefb" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>pT5eTrRGS++Zt8NxjKyTbwKZazdN3HTNMA2Jfed31i8=</DigestValue></Reference></SignedInfo><SignatureValue>GTa90YDsiLCXRMf/yeu2BZ1GczzZLT6GDzASdO171iAyzAuFuTQdx7GLBaLR+qCLHZBgg5pvYR+2pDGkL2kUtwBLssbJM0Z1HfHhPrGzMlvgOXKTrPE45qSqKphaIhrYY863x13cUeK67Ai/vY1fnEf8HPcdiPgiwLka0AQVXKY=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>qPusvKlPF5JEqJRvofH9pL22Z60HpypZUmOEXUGx7QIU/nluArhIVfa0cU9eV9DUOU1IW50FMgYlHNhXQsBJcSJ3XzujEvBX1cp+U5sxSNhdvbzdc/fvyDbFKd9/1Ka+mHYo+V6z+JRGnIGiQakZUbYWxPoyKkDa6rQPXfGdk3M=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="2fd677e77d890d30cd74dc4d376b99026f93ac8c71c3b799ef4b46b44e5e3ea5" Description="" Url=""><as:assemblyIdentity name="Mindwave.UI.exe" version="1.0.0.2" publicKeyToken="3b71998be9ce7796" language="neutral" processorArchitecture="amd64" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=MALEK-PC\Malek</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>8mhnH3l82lKE09gOVE0iq6LbyusuwPJVST1yk2nkNwQ=</DigestValue></Reference></SignedInfo><SignatureValue>LLMo7wLip1OZEU8MX0KcMpfIVTDrgEh+S1lDTQH9g176WgeQ2K7kamzTEVeiUD/Uh5TTmdrq8apkuRlh54Lxe3k0mLkDB1Ld3PTfTBuHPpC5aDCnQNHk3JWYXVAvnVevcEWikS+AsNhELlewKZBWQjaXES1bK72/xBsRo89TzQE=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>qPusvKlPF5JEqJRvofH9pL22Z60HpypZUmOEXUGx7QIU/nluArhIVfa0cU9eV9DUOU1IW50FMgYlHNhXQsBJcSJ3XzujEvBX1cp+U5sxSNhdvbzdc/fvyDbFKd9/1Ka+mHYo+V6z+JRGnIGiQakZUbYWxPoyKkDa6rQPXfGdk3M=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB0TCCATqgAwIBAgIQaeACNK1tVL1OFOiXJV+7vTANBgkqhkiG9w0BAQsFADAnMSUwIwYDVQQDHhwATQBBAEwARQBLAC0AUABDAFwATQBhAGwAZQBrMB4XDTE3MDQwMTE5MDI1NloXDTE4MDQwMjAxMDI1NlowJzElMCMGA1UEAx4cAE0AQQBMAEUASwAtAFAAQwBcAE0AYQBsAGUAazCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAqPusvKlPF5JEqJRvofH9pL22Z60HpypZUmOEXUGx7QIU/nluArhIVfa0cU9eV9DUOU1IW50FMgYlHNhXQsBJcSJ3XzujEvBX1cp+U5sxSNhdvbzdc/fvyDbFKd9/1Ka+mHYo+V6z+JRGnIGiQakZUbYWxPoyKkDa6rQPXfGdk3MCAwEAATANBgkqhkiG9w0BAQsFAAOBgQAnEwjcU2JEOUx9Piaj4YFwMmt3XKH0wP/ToBkAC3tNWjkqDzxEnfb0bmy+55dbIseeM02SkSOkjYPtoGv80TdvkysUbzADheU395wHgo/E3NHaHYr5N3aupGvP845dtgOET/HQ49p/mvrIe35noPCQdSgGqD6osIN8YQNh/OdhBQ==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
